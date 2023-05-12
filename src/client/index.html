@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Notes app</title>
+  </head>
+  <body>
+    <header class="header">
+      <div></div>
+      <h1>Notes App</h1>
+      <ul class="ul">
+        <li class="add-notes-btn">Add Notes</li>
+        <li class="view-notes-btn">View Notes</li>
+      </ul>
+    </header>
+    <!-- Add Notes -->
+    <section class="add-notes-container active">
+      <div class="add-notes-form-section">
+        <form>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            data-input="userName"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="userEmail"
+            name="userEmail"
+            data-input="userEmail"
+          />
+          <label for="description">Description</label>
+          <textarea
+            id="userDescription"
+            name="userDescription"
+            data-input="userDescription"
+          ></textarea>
+          <!-- <input type="file" placeholder="choose file" /> -->
+          <input type="submit" value="Add Notes" />
+        </form>
+        <div class="close-icon">
+          <i class="bi bi-x"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Notes Output -->
+    <section class="notes-output-continer">
+      <div class="notes-output"></div>
+    </section>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
