@@ -58,7 +58,7 @@ form.addEventListener("submit", (e) => {
 
 async function sendingDataToBackend() {
   try {
-    const response = await fetch("http://localhost:8080/api", {
+    const response = await fetch("http://localhost:8080/notes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
